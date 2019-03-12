@@ -1,12 +1,13 @@
-//import java.util.Stack;
-import java.util.LinkedList;
-import java.util.Queue;
+//import java.util.LinkedList;
+import java.util.PriorityQueue;
+//import java.util.Queue;
 
-public class QueueHospital<PatientType> extends Hospital<PatientType> {
-	Queue<PatientType> patientQueue = new LinkedList<PatientType>();
+public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
+{
+	PriorityQueue<PatientType> patientQueue = new PriorityQueue<PatientType>();
 	public void addPatient(PatientType patient) {
 		patientQueue.add(patient);
-		return;
+		
 	}
 	public PatientType nextPatient() {
 		return patientQueue.peek();
@@ -19,9 +20,10 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 	}
 	public String hospitalType() {
 		
-		return "QueueHospital";
+		return "PriorityQueueHospital";
 	}
 	public String allPatientInfo() {
-		return QueueHospital.this.toString();
+		return PriorityQueueHospital.this.toString();
 	}
+
 }
