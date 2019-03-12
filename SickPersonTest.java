@@ -21,6 +21,8 @@ public class SickPersonTest {
 		Person SPT2 = new SickPerson("Tom", 19, severity = 5);
 		SPT1.compareTo(SPT2);
 		Assert.assertEquals("wrong order", 1, SPT1.compareTo(SPT2));
+		// VV tests toString VV
+		Assert.assertEquals("toString incorrect", "Tim, a 19-year old whose illness has a severity of 5.", SPT.toString());
 		
 	}
 

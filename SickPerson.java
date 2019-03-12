@@ -31,6 +31,6 @@ public class SickPerson  extends Person{
 	}
 
 	public String toString() {
-		return String.format("%s, a %d-year old whose illness has a severity of %d .", getName(), getAge(), severity);
+		return String.format("%s, a %d-year old whose illness has a severity of %d.", getName(), getAge(), severity);
 	}
 }
