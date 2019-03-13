@@ -1,6 +1,3 @@
-import static org.junit.Assert.*;
-
-import java.util.LinkedList;
 
 import org.junit.Assert;
 import org.junit.Test;

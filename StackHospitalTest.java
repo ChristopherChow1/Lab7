@@ -15,10 +15,13 @@ public class StackHospitalTest {
 		Assert.assertEquals("Incorrect number of patients", 1, PerStack.numPatients());
 		Assert.assertEquals("wrong hospital type", "StackHospital", PerStack.hospitalType());
 		Assert.assertEquals("wrong patient info", "A StackHospital-type hospital with 1 patients.",PerStack.allPatientInfo());
+		Assert.assertEquals("nextPatient incorrect", a, PerStack.nextPatient());
+		Assert.assertEquals("treatNextPatient incorrect", a, PerStack.treatNextPatient());
 		Assert.assertEquals("Incorrect number of patients", 1, AniStack.numPatients());
 		Assert.assertEquals("wrong hospital type", "StackHospital", AniStack.hospitalType());
-		Assert.assertEquals("wrong patient info", "A StackHospital-type hospital with 1 patients.",PerStack.allPatientInfo());
-		
+		Assert.assertEquals("wrong patient info", "A StackHospital-type hospital with 0 patients.",PerStack.allPatientInfo());
+		Assert.assertEquals("nextPatient incorrect", b, AniStack.nextPatient());
+		Assert.assertEquals("treatNextPatient incorrect", b, AniStack.treatNextPatient());
 		
 
 	}

@@ -5,7 +5,7 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	Stack<PatientType> patientStack = new Stack<PatientType>();
 		public void addPatient(PatientType patient) {
 			patientStack.add(patient);
-			return;
+
 		}
 		public PatientType nextPatient() {
 			return patientStack.peek();
