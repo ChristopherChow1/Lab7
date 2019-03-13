@@ -7,7 +7,6 @@ public class HealthyPersonTest {
 private String reason;
 	@Test
 	public void test() {
-		
 		Person HPT = new HealthyPerson("Tim", 19, reason = "in pain");
 		Assert.assertEquals("HealthyPerson name is wrong", "Tim", HPT.getName());
 		Assert.assertEquals("HealthyPerson age is wrong", 19, HPT.getAge());
